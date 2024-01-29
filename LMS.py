@@ -26,26 +26,6 @@ class LMS:
           for key, value in self.book_dict.items():
 
                print(key,"\t\t", value.get("books_title"),"-[",value.get("Status"),"]") #value.get helps to get the keys value
-
-     # def Issue_books(self):
-     #      books_id = input("Enter books ID: ")
-     #      current_date = datetime.datetime.now().strftime("%Y-%m_d% %H:%M:%S")
-     #      if books_id in self.books_dict.keys():
-     #           if self.book_dict[books_id] ['Status'] == "Already Issued":
-     #                print(f"This book is already issued to {self.book_dict[books_id]['lender_name']} \
-     #                     on {self.book_dict[books_id]['Issue_date']}")
-     #                return self.Issue_books()
-     #           elif self.book_dict[books_id]['Status'] =="Available":
-     #                yourname = input("Enter your name: ")
-     #                self.book_dict[books_id]['lender_name'] = yourname
-     #                self.book_dict[books_id]['Issue_date'] = current_date
-     #                self.book_dict[books_id]['Status'] = 'Alreaady Issued'
-     #                print("Books Issued Successfully")
-     #           else:
-     #                print("Book ID not found")
-     #                return self.Issue_books()
-     #      else:
-     #           print("Books ID not found")
                
      def Issue_books(self):
           books_id = input("Enter books ID: ")
@@ -94,7 +74,7 @@ class LMS:
               print("Book ID not found")
 
 try:
-     myLMS = LMS("LMS.txt", "Atled EBook ") #________________________________________
+     myLMS = LMS("LMS.txt", "Atled EBook ")
      press_key_list = {"D": "Display Books", "I":"Issue Books", "A": "Add Books",
                         "R": "Return Books", "Q": "Quit"}    
      key_press = False 
